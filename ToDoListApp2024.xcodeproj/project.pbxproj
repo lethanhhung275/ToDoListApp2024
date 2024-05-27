@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		41346FEF2C0308E1008CED23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41346FEE2C0308E1008CED23 /* AppDelegate.swift */; };
 		41346FF12C0308E1008CED23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41346FF02C0308E1008CED23 /* SceneDelegate.swift */; };
-		41346FF32C0308E1008CED23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41346FF22C0308E1008CED23 /* ViewController.swift */; };
+		41346FF32C0308E1008CED23 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41346FF22C0308E1008CED23 /* AddTaskController.swift */; };
 		41346FF62C0308E1008CED23 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 41346FF52C0308E1008CED23 /* Base */; };
 		41346FF82C0308E5008CED23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41346FF72C0308E5008CED23 /* Assets.xcassets */; };
 		41346FFB2C0308E5008CED23 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 41346FFA2C0308E5008CED23 /* Base */; };
 		413470062C0308E6008CED23 /* ToDoListApp2024Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470052C0308E6008CED23 /* ToDoListApp2024Tests.swift */; };
 		413470102C0308E7008CED23 /* ToDoListApp2024UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134700F2C0308E7008CED23 /* ToDoListApp2024UITests.swift */; };
 		413470122C0308E7008CED23 /* ToDoListApp2024UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470112C0308E7008CED23 /* ToDoListApp2024UITestsLaunchTests.swift */; };
+		413470242C030CB2008CED23 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470232C030CB2008CED23 /* Todo.swift */; };
+		413470262C0310FD008CED23 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470252C0310FD008CED23 /* TodoTableViewController.swift */; };
+		413470292C03117B008CED23 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470282C03117B008CED23 /* TodoCell.swift */; };
+		4134702C2C03936F008CED23 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4134702B2C03933A008CED23 /* libsqlite3.0.tbd */; };
+		413470412C03959D008CED23 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134703A2C03959C008CED23 /* FMResultSet.m */; };
+		413470422C03959D008CED23 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134703C2C03959C008CED23 /* FMDatabasePool.m */; };
+		413470432C03959D008CED23 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134703D2C03959C008CED23 /* FMDatabase.m */; };
+		413470442C03959D008CED23 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134703E2C03959C008CED23 /* FMDatabaseQueue.m */; };
+		413470452C03959D008CED23 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 413470402C03959C008CED23 /* FMDatabaseAdditions.m */; };
+		413470472C0395B1008CED23 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413470462C0395B1008CED23 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +49,7 @@
 		41346FEB2C0308E1008CED23 /* ToDoListApp2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41346FEE2C0308E1008CED23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41346FF02C0308E1008CED23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41346FF22C0308E1008CED23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41346FF22C0308E1008CED23 /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 		41346FF52C0308E1008CED23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41346FF72C0308E5008CED23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41346FFA2C0308E5008CED23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,23 @@
 		4134700B2C0308E6008CED23 /* ToDoListApp2024UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListApp2024UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4134700F2C0308E7008CED23 /* ToDoListApp2024UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp2024UITests.swift; sourceTree = "<group>"; };
 		413470112C0308E7008CED23 /* ToDoListApp2024UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp2024UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		413470232C030CB2008CED23 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		413470252C0310FD008CED23 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		413470282C03117B008CED23 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		4134702B2C03933A008CED23 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		413470352C03959B008CED23 /* ToDoListApp2024-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoListApp2024-Bridging-Header.h"; sourceTree = "<group>"; };
+		413470362C03959C008CED23 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = ToDoListApp2024/FWDB/src/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		413470372C03959C008CED23 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ToDoListApp2024/FWDB/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		413470382C03959C008CED23 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ToDoListApp2024/FWDB/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		413470392C03959C008CED23 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = ToDoListApp2024/FWDB/src/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		4134703A2C03959C008CED23 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ToDoListApp2024/FWDB/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		4134703B2C03959C008CED23 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ToDoListApp2024/FWDB/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		4134703C2C03959C008CED23 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = ToDoListApp2024/FWDB/src/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		4134703D2C03959C008CED23 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ToDoListApp2024/FWDB/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		4134703E2C03959C008CED23 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = ToDoListApp2024/FWDB/src/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		4134703F2C03959C008CED23 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = ToDoListApp2024/FWDB/src/FMDB.h; sourceTree = SOURCE_ROOT; };
+		413470402C03959C008CED23 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ToDoListApp2024/FWDB/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		413470462C0395B1008CED23 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4134702C2C03936F008CED23 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +111,7 @@
 				413470042C0308E6008CED23 /* ToDoListApp2024Tests */,
 				4134700E2C0308E6008CED23 /* ToDoListApp2024UITests */,
 				41346FEC2C0308E1008CED23 /* Products */,
+				4134702A2C03933A008CED23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +128,12 @@
 		41346FED2C0308E1008CED23 /* ToDoListApp2024 */ = {
 			isa = PBXGroup;
 			children = (
-				41346FEE2C0308E1008CED23 /* AppDelegate.swift */,
-				41346FF02C0308E1008CED23 /* SceneDelegate.swift */,
-				41346FF22C0308E1008CED23 /* ViewController.swift */,
+				413470202C030920008CED23 /* Controllers */,
 				41346FF42C0308E1008CED23 /* Main.storyboard */,
-				41346FF72C0308E5008CED23 /* Assets.xcassets */,
-				41346FF92C0308E5008CED23 /* LaunchScreen.storyboard */,
-				41346FFC2C0308E5008CED23 /* Info.plist */,
+				413470322C03943F008CED23 /* FWDB */,
+				413470272C03114F008CED23 /* Controls */,
+				413470222C030C8D008CED23 /* Models */,
+				4134701E2C0308F1008CED23 /* System files */,
 			);
 			path = ToDoListApp2024;
 			sourceTree = "<group>";
@@ -125,6 +153,87 @@
 				413470112C0308E7008CED23 /* ToDoListApp2024UITestsLaunchTests.swift */,
 			);
 			path = ToDoListApp2024UITests;
+			sourceTree = "<group>";
+		};
+		4134701E2C0308F1008CED23 /* System files */ = {
+			isa = PBXGroup;
+			children = (
+				41346FF72C0308E5008CED23 /* Assets.xcassets */,
+				41346FF92C0308E5008CED23 /* LaunchScreen.storyboard */,
+				41346FFC2C0308E5008CED23 /* Info.plist */,
+				41346FEE2C0308E1008CED23 /* AppDelegate.swift */,
+				41346FF02C0308E1008CED23 /* SceneDelegate.swift */,
+			);
+			name = "System files";
+			sourceTree = "<group>";
+		};
+		413470202C030920008CED23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41346FF22C0308E1008CED23 /* AddTaskController.swift */,
+				413470252C0310FD008CED23 /* TodoTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		413470222C030C8D008CED23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				413470232C030CB2008CED23 /* Todo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		413470272C03114F008CED23 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				413470282C03117B008CED23 /* TodoCell.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		4134702A2C03933A008CED23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4134702B2C03933A008CED23 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		413470322C03943F008CED23 /* FWDB */ = {
+			isa = PBXGroup;
+			children = (
+				413470342C0394C9008CED23 /* DAL */,
+				413470332C03947B008CED23 /* fmdb framework */,
+			);
+			path = FWDB;
+			sourceTree = "<group>";
+		};
+		413470332C03947B008CED23 /* fmdb framework */ = {
+			isa = PBXGroup;
+			children = (
+				413470372C03959C008CED23 /* FMDatabase.h */,
+				4134703D2C03959C008CED23 /* FMDatabase.m */,
+				4134703B2C03959C008CED23 /* FMDatabaseAdditions.h */,
+				413470402C03959C008CED23 /* FMDatabaseAdditions.m */,
+				413470362C03959C008CED23 /* FMDatabasePool.h */,
+				4134703C2C03959C008CED23 /* FMDatabasePool.m */,
+				413470392C03959C008CED23 /* FMDatabaseQueue.h */,
+				4134703E2C03959C008CED23 /* FMDatabaseQueue.m */,
+				4134703F2C03959C008CED23 /* FMDB.h */,
+				413470382C03959C008CED23 /* FMResultSet.h */,
+				4134703A2C03959C008CED23 /* FMResultSet.m */,
+				413470352C03959B008CED23 /* ToDoListApp2024-Bridging-Header.h */,
+			);
+			path = "fmdb framework";
+			sourceTree = "<group>";
+		};
+		413470342C0394C9008CED23 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				413470462C0395B1008CED23 /* Database.swift */,
+			);
+			path = DAL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +304,7 @@
 				TargetAttributes = {
 					41346FEA2C0308E1008CED23 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					413470002C0308E6008CED23 = {
 						CreatedOnToolsVersion = 15.3;
@@ -258,9 +368,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41346FF32C0308E1008CED23 /* ViewController.swift in Sources */,
+				41346FF32C0308E1008CED23 /* AddTaskController.swift in Sources */,
+				413470292C03117B008CED23 /* TodoCell.swift in Sources */,
+				413470412C03959D008CED23 /* FMResultSet.m in Sources */,
+				413470432C03959D008CED23 /* FMDatabase.m in Sources */,
+				413470262C0310FD008CED23 /* TodoTableViewController.swift in Sources */,
+				413470442C03959D008CED23 /* FMDatabaseQueue.m in Sources */,
+				413470472C0395B1008CED23 /* Database.swift in Sources */,
 				41346FEF2C0308E1008CED23 /* AppDelegate.swift in Sources */,
+				413470452C03959D008CED23 /* FMDatabaseAdditions.m in Sources */,
+				413470422C03959D008CED23 /* FMDatabasePool.m in Sources */,
 				41346FF12C0308E1008CED23 /* SceneDelegate.swift in Sources */,
+				413470242C030CB2008CED23 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,6 +577,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nhom4.ToDoListApp2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoListApp2024/FWDB/fmdb framework/ToDoListApp2024-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -484,6 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nhom4.ToDoListApp2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoListApp2024/FWDB/fmdb framework/ToDoListApp2024-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
